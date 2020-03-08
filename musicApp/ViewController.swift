@@ -28,33 +28,46 @@ class ViewController: UIViewController {
         
         audioPlayer.play()
     }
+    
+    func changeOpacity(button: UIButton) {
+        button.alpha = 0.5
+        Thread.sleep(forTimeInterval: 2.0)
+        button.alpha = 1
+    }
 
-    @IBAction func playC(_ sender: Any) {
+    @IBAction func playC(_ sender: UIButton) {
         playSound(name : "c-4")
+        changeOpacity(button: sender)
     }
     
-    @IBAction func playD(_ sender: Any) {
+    @IBAction func playD(_ sender: UIButton) {
         playSound(name : "d-4")
+        changeOpacity(button: sender)
     }
     
-    @IBAction func playE(_ sender: Any) {
+    @IBAction func playE(_ sender: UIButton) {
         playSound(name : "e4")
+        changeOpacity(button: sender)
     }
     
-    @IBAction func playF(_ sender: Any) {
+    @IBAction func playF(_ sender: UIButton) {
         playSound(name : "f-4")
+        changeOpacity(button: sender)
     }
     
-    @IBAction func playG(_ sender: Any) {
+    @IBAction func playG(_ sender: UIButton) {
         playSound(name : "g-4")
+        changeOpacity(button: sender)
     }
     
-    @IBAction func playA(_ sender: Any) {
+    @IBAction func playA(_ sender: UIButton) {
         playSound(name : "a-4")
+        changeOpacity(button: sender)
     }
     
-    @IBAction func playB(_ sender: Any) {
+    @IBAction func playB(_ sender: UIButton) {
         playSound(name : "b4")
+        changeOpacity(button: sender)
     }
 }
 
